@@ -1,0 +1,45 @@
+* {
+  font-family: "Roboto", sans-serif;
+}
+h5 {
+  font-weight: 700;
+}
+.search-input {
+  padding: 0 20rem !important;
+}
+
+#individual-recipe {
+  padding: 1em 20rem;
+}
+.recipe-image-parent {
+  width: 100%;
+  height: 400px;
+}
+#individual-recipe-image {
+  border-radius: 1em;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+#individual-recipe-title {
+  font-weight: 700;
+  margin: 0.2em 0;
+}
+
+#individual-recipe ul li {
+  color: #6c6c6c;
+}
+
+/*Search Results Card*/
+#result-groups {
+  margin-top: 1rem !important;
+}
+.recipe-card {
+  border-radius: 1em !important;
+  border: none !important;
+  background-color: #f8f7f5 !important;
+}
+.recipe-card img {
+  border-top-left-radius: 1em;
+  border-top-right-radius: 1em;
+}
