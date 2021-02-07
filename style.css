@@ -1,5 +1,6 @@
 * {
   font-family: "Roboto", sans-serif;
+  color: #252525;
 }
 h5 {
   font-weight: 700;
@@ -17,16 +18,13 @@ h5 {
   display: none;
 }
 /* Search Input */
-.search-input {
-  padding: 0 20rem !important;
-}
 #search-button {
   background-color: #f06c4e !important;
   border-color: #f06c4e !important;
 }
 /* Individual recipe styles */
 #individual-recipe {
-  padding: 1em 20rem;
+  padding: 1em 0;
   display: none;
 }
 .recipe-image-parent {
@@ -76,4 +74,34 @@ h5 {
 .recipe-card-title {
   font-size: 20px;
   font-weight: 700;
+}
+
+/*footer*/
+#footer {
+  width: 100%;
+  height: 100px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+#footer p {
+  margin-top: 5em;
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+  color: #3e3e3e;
+  font-weight: bold;
+}
+#footer a {
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+  color: #f06c4e;
+  font-weight: bold;
+}
+#footer a:hover {
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+  color: #ce5439;
+  font-weight: bold;
 }
