@@ -4,12 +4,30 @@
 h5 {
   font-weight: 700;
 }
+
+/* Bootstrap override */
+.form-control:focus {
+  border-color: #cccccc !important;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+/* Not Found */
+#not-found-div {
+  display: none;
+}
+/* Search Input */
 .search-input {
   padding: 0 20rem !important;
 }
-
+#search-button {
+  background-color: #f06c4e !important;
+  border-color: #f06c4e !important;
+}
+/* Individual recipe styles */
 #individual-recipe {
   padding: 1em 20rem;
+  display: none;
 }
 .recipe-image-parent {
   width: 100%;
@@ -22,12 +40,24 @@ h5 {
   object-fit: cover;
 }
 #individual-recipe-title {
-  font-weight: 700;
+  font-weight: 900;
   margin: 0.2em 0;
+  font-size: 36px;
 }
-
 #individual-recipe ul li {
   color: #6c6c6c;
+  font-size: 16px;
+}
+#individual-recipe-ingredients {
+  list-style: none;
+}
+#individual-recipe-ingredients li::before {
+  content: "\2022";
+  color: #f06c4e;
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
 }
 
 /*Search Results Card*/
@@ -42,4 +72,8 @@ h5 {
 .recipe-card img {
   border-top-left-radius: 1em;
   border-top-right-radius: 1em;
+}
+.recipe-card-title {
+  font-size: 20px;
+  font-weight: 700;
 }

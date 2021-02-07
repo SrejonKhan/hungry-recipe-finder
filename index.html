@@ -13,7 +13,7 @@
       crossorigin="anonymous"
     />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
   </head>
 
   <!--Body-->
@@ -30,14 +30,24 @@
       <div class="row justify-content-center">
         <div class="input-group search-input">
           <input
+            id="search-inputfield"
             type="text"
-            class="form-control"
-            placeholder="Recipient's username"
+            class="form-control shadow-none"
+            placeholder="Any food you're craving for..."
             aria-label="Recipient's username"
             aria-describedby="basic-addon2"
           />
           <div class="input-group-append">
-            <button class="btn btn-primary" type="button">Button</button>
+            <button id="search-button" class="btn btn-primary shadow-none" type="button">Search</button>
+          </div>
+        </div>
+      </div>
+
+      <div id="not-found-div">
+        <div class="row justfiy-content-center">
+          <div class="col">
+            <img src="images/chef.png" alt="" class="img-fluid mx-auto" width="60%" style="display: block" />
+            <h3 class="text-center" style="font-weight: 700">Nothing was found, maybe a better dish?</h3>
           </div>
         </div>
       </div>
@@ -47,13 +57,14 @@
           <div class="recipe-image-parent">
             <img
               id="individual-recipe-image"
+              class="img-fluid"
               src="https://www.themealdb.com/images/media/meals/58oia61564916529.jpg"
               alt=""
             />
           </div>
         </div>
         <h1 id="individual-recipe-title">Hello</h1>
-        <h5 style="font-weight: 700; padding-top: 10px">Ingredients</h5>
+        <h5 style="font-weight: 700; padding-top: 10px; font-size: 20px">Ingredients</h5>
         <ul id="individual-recipe-ingredients">
           <li>Hi</li>
           <li>Hi</li>
@@ -75,7 +86,7 @@
           <div class="card">
             <img src="..." class="card-img-top" alt="..." />
             <div class="card-body">
-              <h5 class="card-title">Card title</h5>
+              <h5 class="card-title recipe-card-title">Card title</h5>
             </div>
           </div>
         </div>
